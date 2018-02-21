@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background: palevioletred;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+.container {
+	background: #fff;
+	margin: 20px auto;
+	max-width: 1024px;
+	overflow: auto;
+	padding: 20px;
+	width: 100%
+}
+
+.demo-item {
+	background: rebeccapurple;
+	float: left;
+	padding: 10px;
+	width: 33.3333%;
+}
