@@ -5,7 +5,7 @@ A vanilla JavaScript plugin for equalizing the height of elements. No jQuery req
 Insert the script into your HTML and initialize Equalizer. Initialization should be done using the load event for best results. 
 
 
-```
+```html
 <script src="equalizer.min.js"></script>
 <script>
 	window.addEventListener('load', function() {
@@ -16,7 +16,7 @@ Insert the script into your HTML and initialize Equalizer. Initialization should
 
 You may want to use your own breakpoints for your project. To do so, pass those values in the settings object when you initialize Equalizer. Breakpoints are calculated in a mobile first format, so you don't need to include a breakpoint for `0px`.
 
-```
+```javascript
 Equalizer.init({
 	breakpoints: {
 		small: 480,
@@ -44,7 +44,7 @@ You may also specify a "group" of elements to equalize. This is helpful if you w
 
 To create an equalizer group, simply pass the name of the group to the `data-equalizer-row` attribute.
 
-```
+```html
 <div class="my-element" data-equalizer-row="my-group">
 	...
 </div>
@@ -58,7 +58,7 @@ From there, you must enter the group name into the `data-equalizer` attribute fo
 
 Equalize only on all breakpoints.
 
-```
+```html
 <div class="demo_row" data-equalizer-row>
 	<div class="demo_item" data-equalizer>
 		<img src="https://picsum.photos/500?random" width="500" height="500" alt="demo image">
@@ -77,7 +77,7 @@ Equalize only on all breakpoints.
 
 Equalize only on `medium` and `xlarge`.
 
-```
+```html
 <div class="demo_row" data-equalizer-row data-equalizer-on="medium,xlarge">
 	<div class="demo_item" data-equalizer>
 		<img src="https://picsum.photos/500?random" width="500" height="500" alt="demo image">
@@ -95,7 +95,7 @@ Equalize only on `medium` and `xlarge`.
 
 Equalize multiple groups of elements.
 
-```
+```html
 <div class="demo_row" data-equalizer-row="group1" data-equalizer-on="medium,xlarge">
 	<div class="demo_item" data-equalizer="group1">
 		<img src="https://picsum.photos/500?random" width="500" height="500" alt="demo image">
