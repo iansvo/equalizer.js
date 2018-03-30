@@ -25,4 +25,7 @@ img {
     width: 33.3333%; }
     .demo_item--green {
       background: green; }
+  .demo_row {
+    display: inline-block;
+    width: 100%; }
 /*# sourceMappingURL=demo.css.map */

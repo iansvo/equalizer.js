@@ -31,4 +31,9 @@ img {
 			background: green;	
 		}
 	}
+	
+	&_row {
+		display: inline-block;
+		width: 100%;
+	}
 }

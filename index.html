@@ -8,19 +8,21 @@
 	</head>
 	<body>
 		
-		<main id="example" class="demo container" data-equalizer-row="group1" data-equalizer-on="medium,xlarge">
+		<main id="example" class="demo container">
     		<h1 class="demo_title">Equalizer.js Demo</h1>
-			<div class="demo_item" data-equalizer="group1">
-				<img src="//picsum.photos/500?random" width="500" height="500" alt="demo image">
-			</div>
-			
-			<div class="demo_item" data-equalizer="group1">
-				<img src="//picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
-			</div>
-			
-			<div class="demo_item" data-equalizer="group1">
-				<img src="//picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
-			</div>
+    		<div class="demo_row" data-equalizer-row="group1" data-equalizer-on="medium,xlarge">
+				<div class="demo_item" data-equalizer="group1">
+					<img src="//picsum.photos/500?random" width="500" height="500" alt="demo image">
+				</div>
+				
+				<div class="demo_item" data-equalizer="group1">
+					<img src="//picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
+				</div>
+				
+				<div class="demo_item" data-equalizer="group1">
+					<img src="//picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
+				</div>
+    		</div>
 			<div class="demo_row" data-equalizer-row="group2">
 				<div class="demo_item demo_item--green" data-equalizer="group2">
 					<img src="//picsum.photos/150?random" width="150" height="150" alt="demo image">
@@ -38,9 +40,16 @@
 
 		<script src="equalizer.js"></script>
 		<script>
-    		window.onload = function() {
-    		    Equalizer.init();
-    		};
+    		window.addEventListener('load', function() {
+    		    Equalizer.init({
+	    		    breakpoints: {		    		    
+		    		    small: 480,
+		    		    medium: 768,
+		    		    large: 1024,
+		    		    xlarge: 1200
+	    		    }
+    		    });
+    		});
         </script>
 	</body>
 </html>
