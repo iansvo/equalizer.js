@@ -7,7 +7,7 @@
 		"uuidString": "D859EF1B-6102-44FF-BF50-027C6AFE037C"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/.editorconfig": {
 		"cB": 0,
@@ -49,9 +49,19 @@
 	"\/equalizer.js": {
 		"ft": 64,
 		"ma": 1,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/equalizer.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/equalizer.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/equalizer.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -68,6 +78,23 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/old-scripts.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/old-scripts.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/old-scripts.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/old-scripts.min.js.map",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -783,7 +810,7 @@
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -1199,11 +1226,11 @@
 			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
 			},
 		"no-unused-labels": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {

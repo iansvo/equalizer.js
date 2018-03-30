@@ -8,20 +8,26 @@
 	</head>
 	<body>
 		
-		<main id="example" class="demo container">
+		<main id="example" class="demo container" data-equalizer-row data-equalizer-on="large,xlarge">
     		<h1 class="demo_title">Equalizer.js Demo</h1>
-			<div class="demo_item">
+			<div class="demo_item" data-equalizer>
 				<img src="//picsum.photos/500?random" width="500" height="500" alt="demo image">
 			</div>
 			
-			<div class="demo_item">
+			<div class="demo_item" data-equalizer>
 				<img src="//picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
 			</div>
 			
-			<div class="demo_item">
+			<div class="demo_item" data-equalizer>
 				<img src="//picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
 			</div>								
 		</main>
+
 		<script src="equalizer.js"></script>
+		<script>
+    		window.onload = function() {
+    		    Equalizer.init();
+    		};
+        </script>
 	</body>
 </html>
