@@ -80,23 +80,6 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
-	"\/old-scripts.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/old-scripts.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-scripts.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/old-scripts.min.js.map",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,

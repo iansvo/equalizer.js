@@ -23,4 +23,6 @@ img {
     float: left;
     padding: 10px;
     width: 33.3333%; }
+    .demo_item--green {
+      background: green; }
 /*# sourceMappingURL=demo.css.map */

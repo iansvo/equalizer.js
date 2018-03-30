@@ -5,6 +5,6 @@ end_of_line = lf
 insert_final_newline = true
 
 [*.{html,css,js}]
-indent_style = space
+indent_style = tab
 indent_size = 4
 

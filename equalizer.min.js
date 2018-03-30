@@ -10,7 +10,7 @@ var Equalizer = (function () {
               small: 480,
               medium: 640,
               large: 1024,
-              xlarge: 1200
+			  xlarge: 1200
           }  
         };
         
@@ -19,7 +19,7 @@ var Equalizer = (function () {
     (function() {
         // Custom Event Polyfill for IE
         // see: https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
-        if( window.CustomEvent !== 'function' ) { return; }
+		if( window.CustomEvent !== 'function' ) { return; }
         
         function CustomEvent ( event, params ) {
             params = params || { bubbles: false, cancelable: false, detail: undefined };
@@ -142,7 +142,7 @@ var Equalizer = (function () {
     
     function equalizeGroups() {
         var $groups = document.querySelectorAll('[data-equalizer-row]');
-        
+
         // Loop through each group
         for( var i = 0; i < $groups.length; i++ ) {
             
@@ -185,8 +185,6 @@ var Equalizer = (function () {
                 else {
                     equalizeHeight($items);
                 }
-                
-                return $items;
             }
         }
         

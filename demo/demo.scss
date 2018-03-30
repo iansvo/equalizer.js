@@ -26,5 +26,9 @@ img {
 		float: left;
 		padding: 10px;
 		width: 33.3333%;
+		
+		&--green {
+			background: green;	
+		}
 	}
 }
