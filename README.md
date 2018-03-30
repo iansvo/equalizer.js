@@ -61,15 +61,15 @@ Equalize only on all breakpoints.
 ```
 <div class="demo_row" data-equalizer-row>
 	<div class="demo_item" data-equalizer>
-		<img src="//picsum.photos/500?random" width="500" height="500" alt="demo image">
+		<img src="https://picsum.photos/500?random" width="500" height="500" alt="demo image">
 	</div>
 	
 	<div class="demo_item" data-equalizer>
-		<img src="//picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
+		<img src="https://picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
 	</div>
 	
 	<div class="demo_item" data-equalizer>
-		<img src="//picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
+		<img src="https://picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
 	</div>
 </div>
 ```
@@ -80,15 +80,15 @@ Equalize only on `medium` and `xlarge`.
 ```
 <div class="demo_row" data-equalizer-row data-equalizer-on="medium,xlarge">
 	<div class="demo_item" data-equalizer>
-		<img src="//picsum.photos/500?random" width="500" height="500" alt="demo image">
+		<img src="https://picsum.photos/500?random" width="500" height="500" alt="demo image">
 	</div>
 	
 	<div class="demo_item" data-equalizer>
-		<img src="//picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
+		<img src="https://picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
 	</div>
 	
 	<div class="demo_item" data-equalizer>
-		<img src="//picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
+		<img src="https://picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
 	</div>
 </div>
 ```
@@ -98,28 +98,28 @@ Equalize multiple groups of elements.
 ```
 <div class="demo_row" data-equalizer-row="group1" data-equalizer-on="medium,xlarge">
 	<div class="demo_item" data-equalizer="group1">
-		<img src="//picsum.photos/500?random" width="500" height="500" alt="demo image">
+		<img src="https://picsum.photos/500?random" width="500" height="500" alt="demo image">
 	</div>
 	
 	<div class="demo_item" data-equalizer="group1">
-		<img src="//picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
+		<img src="https://picsum.photos/500/900?random" width="500" height="900" alt="demo image">					
 	</div>
 	
 	<div class="demo_item" data-equalizer="group1">
-		<img src="//picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
+		<img src="https://picsum.photos/500/250?random" width="500" height="250" alt="demo image">					
 	</div>
 </div>
 <div class="demo_row" data-equalizer-row="group2">
 	<div class="demo_item demo_item--green" data-equalizer="group2">
-		<img src="//picsum.photos/150?random" width="150" height="150" alt="demo image">
+		<img src="https://picsum.photos/150?random" width="150" height="150" alt="demo image">
 	</div>
 	
 	<div class="demo_item demo_item--green" data-equalizer="group2">
-		<img src="//picsum.photos/75?random" width="75" height="75" alt="demo image">					
+		<img src="https:https://picsum.photos/75?random" width="75" height="75" alt="demo image">					
 	</div>
 	
 	<div class="demo_item demo_item--green" data-equalizer="group2">
-		<img src="//picsum.photos/250?random" width="250" height="250" alt="demo image">					
+		<img src="https://picsum.photos/250?random" width="250" height="250" alt="demo image">					
 	</div>
 </div>	
 ```
