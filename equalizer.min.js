@@ -115,8 +115,32 @@ var Equalizer = (function () {
         resetHeight($elements);        
     };
     
+    function currentBreakpoint() {
+        var breakpoints = settings.breakpoints,
+            windowWidth = window.innerWidth;
+        
+        for( var i = 0; i < breakpoints.length; i++ ) {
+            var minWidth  = breakpoints[i].minWidth,
+                mqMin     = '(min-width: ' + minWidth + 'px)',
+                mq        = mqMin,
+                maxWidth,
+                mqMax;
+            
+            // If the maxHeight property exists...
+            if( 'maxWidth' in breakpoints[i] ) {
+                maxWidth  = breakpoints[i].maxWidth;
+                mqMax     = ' and (max-width: ' + maxWidth + 'px)';
+                mq       += mqMax;
+            }
+            
+            if( matchMedia(mq).matches ) {
+                return breakpoints[i].name;
+            }
+        }
+    }
+    publicAPI.currentBreakpoint = currentBreakpoint;    
+    
     function equalizeGroups() {
-        console.log('Equalizing Groups...');
         var $groups = document.querySelectorAll('[data-equalizer-row]');
         
         // Loop through each group
@@ -144,29 +168,16 @@ var Equalizer = (function () {
             // If items were found
             if( $items.length ) {
                 
-                console.log(equalizeOn);
+                var currentBreakpoint = publicAPI.currentBreakpoint();
                 
                 // Reset items height
                 resetHeight($items)
                 
                 if( Array.isArray(equalizeOn) ) {
                     for( var index = 0; index < equalizeOn.length; index++ ) {
-                        var minWidth  = equalizeOn[i].minWidth,
-                            mqMin     = '(min-width: ' + minWidth + 'px)',
-                            mq        = mqMin,
-                            maxWidth,
-                            mqMax;
-                            
-                        console.log(equalizeOn[i]);
                         
-                        // If the maxHeight property exists...
-                        if( 'maxWidth' in settings.breakpoints[ equalizeOn[i] ] ) {
-                            maxWidth  = settings.breakpoints[ equalizeOn[i] ].maxWidth;
-                            mqMax     = ' and (max-width: ' + maxWidth + 'px)';
-                            mq       += mqMax;
-                        }
-                        
-                        if( matchMedia(mq).matches ) {
+                        // If equalizeOn value(s) match the current breakpoint, equalize
+                        if( equalizeOn[index] == currentBreakpoint ) {
                             equalizeHeight($items);
                         }
                     }
@@ -179,14 +190,6 @@ var Equalizer = (function () {
             }
         }
         
-    }
-    
-    function currentBreakpoint() {
-        var windowWidth = window.innerWidth;
-        
-        for( var i = 0; i < settings.breakpoints.length; i++ ) {
-           // 
-        }
     }
     
     // Equalizes the height of a list of elements
