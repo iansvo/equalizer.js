@@ -258,6 +258,7 @@ var Equalizer = (function () {
             $elements[index].style.height = maxHeight + 'px'; 
         }        
     }
+    publicAPI.equalizeHeight = equalizeHeight;
     
     // Resets height of elements to "auto"
     function resetHeight($elements) {
@@ -265,6 +266,7 @@ var Equalizer = (function () {
             $elements[i].style.height = 'auto';
         }
     }
+    publicAPI.resetHeight = resetHeight;
     
     function parseBreakpoints(breakpoints) {
         
