@@ -54,6 +54,15 @@ From there, you must enter the group name into the `data-equalizer` attribute fo
 
 *Note: Elements can only have one `data-equalizer-row` attribute.*
 
+
+### Methods
+
+`equalizeHeight`
+
+Arguments:
+
+- $elements - NodeList/Array of elements to equalize
+
 ## Examples
 
 Equalize only on all breakpoints.
