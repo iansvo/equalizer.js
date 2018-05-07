@@ -1,0 +1,11 @@
+{
+	"name": "equalizer.js",
+	"description": "A vanilla JavaScript plugin for equalizing the height of elements. No jQuery required, but if you're using jQuery that's just fine.",
+	"authors": [
+		"Ian Svoboda <@iansvo> (https://iansvoboda.com)"
+	],
+	"respository": {
+		"type": "git",
+		"url": "git://github.com/iansvo/equalizer.js.git"
+	}
+}
