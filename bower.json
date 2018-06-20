@@ -1,6 +1,9 @@
 {
 	"name": "equalizer.js",
 	"description": "A vanilla JavaScript plugin for equalizing the height of elements. No jQuery required, but if you're using jQuery that's just fine.",
+	"main": [
+		"equalizer.js"
+	],
 	"authors": [
 		"Ian Svoboda <@iansvo> (https://iansvoboda.com)"
 	],
