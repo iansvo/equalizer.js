@@ -10,5 +10,6 @@
 	"respository": {
 		"type": "git",
 		"url": "git://github.com/iansvo/equalizer.js.git"
-	}
+	},
+	"version": "1.0"
 }
